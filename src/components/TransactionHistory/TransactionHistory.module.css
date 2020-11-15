@@ -1,0 +1,83 @@
+.container {
+    width: fit-content;
+    height: fit-content;
+    border: thin solid rgba(166, 160, 255, 0.863);
+    border-color: rgba(166, 160, 255, 0.863);
+    color: rgb(111, 90, 189);
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.container ul {
+    height: 95%;
+    width: 100%;
+    color: rgb(133, 106, 58);
+    list-style: none;
+    justify-self: start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0 0 16px 0;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.container ul::-webkit-scrollbar {
+    width: 5px;
+}
+.container ul::-webkit-scrollbar-thumb {
+    background-color: whitesmoke;
+    border-radius: 3px;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        height: fit-content;
+    }
+}
+@media (max-width: 909px) {
+    .container {
+        height: fit-content;
+    }
+}
+@media (max-width: 500px) {
+    .container {
+        transform: translate(-7px, 0);
+    }
+}
+
+/* CSS for Empty History */
+
+
+.text {
+    text-align: center;
+    font-size: 16px;
+}
+
+.noTransaction {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emptyContainer {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 850px) {
+    .emptyContainer {
+        height: fit-content;
+    }
+    .addIcon {
+        margin-top: 50px;
+    }
+    .text {
+        margin-bottom: 50px;
+    }
+}

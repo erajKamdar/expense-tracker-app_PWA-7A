@@ -1,0 +1,57 @@
+html, body, #root {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  color: black;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.container {
+  background: fixed;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.leftContainer {
+  width: 70%;
+  margin-bottom: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rightContainer {
+  width: 70%;
+}
+
+
+@media (max-width: 850px) {
+  .container {
+      display: flex;
+      background: white;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .leftContainer {
+      width: 70%;
+      margin-bottom: 40px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .rightContainer {
+      width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .leftContainer {
+      width: 85%;
+  }
+  .rightContainer {
+      width: 85%;
+  }
+}
